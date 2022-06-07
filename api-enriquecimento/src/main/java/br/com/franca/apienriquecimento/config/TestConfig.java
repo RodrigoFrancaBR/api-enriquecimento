@@ -15,7 +15,7 @@ public class TestConfig {
     @Bean
     public boolean instantiateDataBase(IPessoaRepository repository) {
         for (int i = 0; i < 10; i++) {
-            var pessoa = Pessoa.builder()
+            Pessoa pessoa = Pessoa.builder()
                 .nome("meu-nome-" + i)
                 .cpf("1234567891" + i)
                 .nascimento(LocalDate.of(198 + i, 1 + i, 10 + i))

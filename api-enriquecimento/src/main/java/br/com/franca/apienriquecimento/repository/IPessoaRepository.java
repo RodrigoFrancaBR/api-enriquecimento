@@ -9,6 +9,6 @@ import java.util.Optional;
 @Repository
 public interface IPessoaRepository extends CrudRepository<Pessoa, Long> {
 
-    public Optional<Pessoa> findByCpf(String cpf);
+    Optional<Pessoa> findByCpf(String cpf);
 
 }
