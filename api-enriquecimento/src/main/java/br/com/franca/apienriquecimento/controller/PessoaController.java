@@ -7,12 +7,9 @@ import lombok.RequiredArgsConstructor;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import java.util.Optional;
-import java.util.concurrent.atomic.AtomicReference;
-
 @RequiredArgsConstructor
 @RestController
-@RequestMapping(path = "enriquecimento/pessoas")
+@RequestMapping(path = "v1/enriquecimento/pessoas")
 public class PessoaController implements IPessoaController {
 
     private final IPessoaRepository repository;

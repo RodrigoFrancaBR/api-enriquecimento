@@ -1,0 +1,18 @@
+spring:
+
+  datasource:
+    url: jdbc:mysql://${API_ENRIQUECIMENTO_MYSQL_HOST:localhost}:${API_ENRIQUECIMENTO_MYSQL_PORT:3306}/${API_ENRIQUECIMENTO_MYSQL_DATABASE:api_enriquecimento}?createDatabaseIfNotExist=true&serverTimezone=UTC
+    username: ${API_ENRIQUECIMENTO_MYSQL_USER:root}
+    password: ${API_ENRIQUECIMENTO_MYSQL_PASSWORD:root}
+
+  jpa:
+    generate-ddl: 'true'
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQL57Dialect
+        format_sql: true
+        show_sql: true
+    hibernate:
+      ddl-auto: create
+    show-sql: 'true'
+

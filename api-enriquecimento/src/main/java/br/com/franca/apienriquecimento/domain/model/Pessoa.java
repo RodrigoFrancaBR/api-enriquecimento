@@ -20,10 +20,12 @@ import java.time.LocalDate;
 @NoArgsConstructor
 @Builder
 public class Pessoa {
+
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @EqualsAndHashCode.Include
     private Long id;
+
     private String nome;
     private String cpf;
     private LocalDate nascimento;
