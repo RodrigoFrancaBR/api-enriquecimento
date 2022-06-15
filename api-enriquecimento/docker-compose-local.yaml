@@ -14,3 +14,6 @@ services:
       MYSQL_ROOT_HOST: '%'
     ports:
       - '3306:3306'
+    volumes:
+      - './data/enriquecimento/backup:/var/lib/mysql'
+      - './data/enriquecimento:/docker-entrypoint-initdb.d'
